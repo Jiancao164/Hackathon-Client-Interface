@@ -266,8 +266,9 @@ border:solid 1px #777;
 }
 .homepage-event-note {
   position: absolute;
-  bottom: 500px;
-  left: 700px;
+  bottom: 510px;
+  left: 200px;
+  right: 600px;
   margin-top: 600px;
   margin-left: 150px;
   color: white;
@@ -281,6 +282,44 @@ border:solid 1px #777;
   color: white;
   font-size: 70px;
   font-weight: bolder;
+}
+.arrowWhite {
+  width: 110px;
+  height: 110px;
+  align-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 140px;
+  left: 700px;
+  color: white;
+  font-size: 70px;
+  font-weight: bolder;
+}
+.playWhite {
+  align-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 140px;
+  left: 700px;
+  color: white;
+  font-size: 70px;
+  font-weight: bolder;
+}
+.arrowWhite:hover
+{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.home-note {
+  text-align: left;
+  position: absolute;
+  bottom: 480px;
+  left: 100px;
+  right:650px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
 }
 .section {
   height: 420px;

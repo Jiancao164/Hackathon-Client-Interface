@@ -3,6 +3,7 @@ import Heading from "./Heading";
 import RecipeScreen from "./RecipeScreen";
 import VideoScreen from "./VideoScreen";
 import CalendarScreen from "./CalendarScreen";
+import HomeScreen from "./HomeScreen";
 
 class HomePage extends Component{
     constructor(props) {
@@ -11,8 +12,11 @@ class HomePage extends Component{
     scrollDiv = createRef();
     scrollRecipes = createRef();
     scrollEvents = createRef();
+    scrollHome = createRef();
 
-
+    scrollHomeHandler = () => {
+        this.scrollHome.current.scrollIntoView({ behavior: "smooth" });
+    };
     scrollSmoothHandler = () => {
         this.scrollDiv.current.scrollIntoView({ behavior: "smooth" });
     };
@@ -28,9 +32,13 @@ class HomePage extends Component{
         return(
             <div>
                 <Heading
+                    scrollHomeHandler={this.scrollHomeHandler}
                     scrollEventsHandler={this.scrollEventsHandler}
                     scrollRecipesHandler={this.scrollRecipesHandler}
                     scrollSmoothHandler={this.scrollSmoothHandler}/>
+                <HomeScreen
+                    scrollRecipesHandler={this.scrollRecipesHandler}
+                    scrollHome={this.scrollHome}/>
                 <RecipeScreen scrollRecipes={this.scrollRecipes}/>
                 <VideoScreen scrollDiv={this.scrollDiv}/>
                 <CalendarScreen scrollEvents={this.scrollEvents}/>
