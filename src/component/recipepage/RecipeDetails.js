@@ -10,19 +10,27 @@ import thumbsUp from '../common/thumbs_up_1223115_easyicon.net.svg';
 import Banner from 'react-js-banner';
 
 
+
+
 class RecipeDetails extends Component{
     constructor(props) {
         super(props);
         this.state = {
             recipe: {},
-            vote: false
+            vote: false,
+            email: "",
+
         }
     }
+
     componentDidMount = async () => {
         await findRecipeById(this.props.match.params.rid).then(results => this.setState({
             recipe: results
         }));
     };
+
+
+
     render() {
         return(
             <div>
@@ -52,12 +60,13 @@ class RecipeDetails extends Component{
 
                                 <li className="nav-item active">
                                     <a className="nav-link"
-                                       onClick={this.props.scrollSmoothHandler}>
+                                       href={"/videos"}>
                                         Videos
                                     </a>
                                 </li>
                                 <li className="nav-item  active">
                                     <a className="nav-link"
+                                       href={"/calendar"}
                                        onClick={this.props.scrollEventsHandler}>Events</a>
                                 </li>
                             </ul>
@@ -90,39 +99,12 @@ class RecipeDetails extends Component{
                             {this.state.recipe.url && <img className={"card-img-top new-movie-post"} src={this.state.recipe.url && `${this.state.recipe.url}`}/>}
                         </div>
                         <div className={"col-6"}>
-                            <div className={"row"}>
-                                <div className={"row col-4"}>
-                                    <div>
-                                        <img className={"info"} src={alarmClock} alt="cookingPot" />
-                                    </div>
-                                    <div>
-                                        <div>Prep time</div>
-                                        <h4>{this.state.recipe.preTime}</h4>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div className={"row col-4"}>
-                                    <div>
-                                        <img className={"info"} src={cookingPot} alt="cookingPot" />
-                                    </div>
-                                    <div>
-                                        <div>Cook time</div>
-                                        <h4>{this.state.recipe.cookTime}</h4>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div className={"row col-4"}>
-                                    <div>
-                                        <img className={"info"} src={utensil} alt="cookingPot" />
-                                    </div>
-                                    <div>
-                                        <div>Servings</div>
-                                        <h4>{this.state.recipe.servings}</h4>
-                                    </div>
-                                </div>
-
+                            <div className={"recipe-description"}>
+                                {this.state.recipe.description}
                             </div>
-                            <div className={"row thumbs-vote"}>
+
+                            <br/>
+                            <div className={"row thumbs-vote "}>
                                 <img
                                     onClick = {() => {{!this.state.vote && this.setState({recipe: {...this.state.recipe, upvote: this.state.recipe.upvote + 1}})};
                                         this.setState({vote: true});
@@ -140,6 +122,60 @@ class RecipeDetails extends Component{
                             </div>
 
                         </div>
+                    </div>
+
+                    <div className={"row icon-email"}>
+                        <div className={"row col-6"}>
+                            <div className={"row col-5"}>
+                                <div>
+                                    <img className={"info"} src={alarmClock} alt="cookingPot" />
+                                </div>
+                                <div>
+                                    <div>Prep time</div>
+                                    <h4 className={"icon-note"}>{this.state.recipe.preTime}</h4>
+                                </div>
+                            </div>
+
+                            <div className={"row col-5"}>
+                                <div>
+                                    <img className={"info"} src={cookingPot} alt="cookingPot" />
+                                </div>
+                                <div>
+                                    <div>Cook time</div>
+                                    <h4 className={"icon-note"}>{this.state.recipe.cookTime}</h4>
+                                </div>
+                            </div>
+
+                            <div className={"row col-4"}>
+                                <div>
+                                    <img className={"info"} src={utensil} alt="cookingPot" />
+                                </div>
+                                <div>
+                                    <div>Servings</div>
+                                    <h4 className={"icon-note"}>{this.state.recipe.servings}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={"row"}>
+                            <div className={"col-7 form-control-email"}>
+                                <input
+                                    type={"email"}
+                                    onChange={(e) => this.setState({
+                                        email: e.target.value
+                                    })}
+                                    style={{height: "52px", width: "300px"}}
+                                    className="form-control" placeholder="Email" aria-label="Username"
+                                    value={this.state.email} aria-describedby="basic-addon1"/>
+                            </div>
+                            <div className={"float-right"}>
+                                <button
+                                    className={"btn btn-email "}>Sign me in</button>
+                            </div>
+
+                        </div>
+
+
+
                     </div>
                     <div className="shadow p-3 mb-5 bg-white rounded">
                         <h2 className={"bold-font"}>Nutrition Facts(per serving)</h2>

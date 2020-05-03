@@ -85,6 +85,9 @@
   font-family: Oswald;
   font-size: 40px;
 }
+.cal-note {
+  margin-top: 160px;
+}
 .normal-font{
   /*-webkit-font-smoothing: antialiased;*/
   /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);*/
@@ -150,7 +153,7 @@
 }
 .recipe-image {
   width: 500px;
-  height: 500px;
+  height: 379px;
 }
 .card-body {
   text-align: center;
@@ -171,15 +174,15 @@
   cursor: pointer;
   margin-left: 180px;
   margin-right: 10px;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 .thumbs-down {
   cursor: pointer;
   margin-left: 50px;
   margin-right: 10px;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 .shadow {
   color: steelblue;
@@ -207,4 +210,65 @@
 .banners {
   background: #015488;
 ;
+}
+.btn-email {
+  font-family: Oswald;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  background-color: #015488;
+}
+.form-control-email {
+  margin-left: 30px;
+}
+.calendar {
+
+border:solid 1px #777;
+  margin-left: 50px;
+  width:900px;
+  height:650px;
+  frameborder:0;
+  scrolling:no
+}
+.card-text-description {
+  text-align: left;
+}
+.recipe-description {
+  font-weight: 300;
+  font-family: Oswald;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.icon-email {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.homepage-video-note {
+  position: absolute;
+  bottom: 500px;
+  left: 80px;
+  margin-top: 600px;
+  margin-right: 600px;
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.homepage-video-note2 {
+  position: absolute;
+  bottom: 400px;
+  left: 80px;
+  margin-top: 600px;
+  margin-right: 600px;
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.recipe-note {
+  position: absolute;
+  bottom: 400px;
+  left: 320px;
+  color: white;
+  font-size: 70px;
+  font-weight: bolder;
 }

@@ -6,6 +6,9 @@ import HomePage from "../component/homepage/HomePage";
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import Recipes from "../component/recipepage/Recipes";
 import RecipeDetails from "../component/recipepage/RecipeDetails";
+import Calendar from "../component/calendar/Calendar";
+import Video from "../component/video/Video";
+import VideoDetails from "../component/video/VideoDetail";
 
 class Manager extends Component{
     render() {
@@ -27,6 +30,18 @@ class Manager extends Component{
                         path={"/recipes/:rid/details"}
                         exact={true}
                         component={RecipeDetails}/>
+                    <Route
+                        path={"/calendar"}
+                        exact={true}
+                        component={Calendar}/>
+                    <Route
+                        path={"/videos"}
+                        exact={true}
+                        component={Video}/>
+                    <Route
+                        path={"/videos/:vid/details"}
+                        exact={true}
+                        component={VideoDetails}/>
 
 
                 </Router>

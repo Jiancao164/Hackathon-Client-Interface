@@ -1,22 +1,34 @@
 import React, {Component} from 'react'
-import {findRecipes} from "../services/RecipeService";
 import {Link} from "react-router-dom";
+import {findVideoById, findVideos, updateVideo} from "../services/VideoService";
+import {findNutrition} from "../services/NutritionService";
 import cookingPot from '../common/cooking_pot.svg';
 import alarmClock from '../common/alarm_clock.svg';
 import utensil from '../common/dinner_knive&fork.svg';
+import thumbsDown from '../common/thumbs_down_1223114_easyicon.net.svg';
+import thumbsUp from '../common/thumbs_up_1223115_easyicon.net.svg';
+import Banner from 'react-js-banner';
 
-class Recipes extends Component{
+
+
+
+class VideoDetails extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            recipes: [],
+            video: {},
+            vote: false,
+            email: "",
+
         }
     }
+
     componentDidMount = async () => {
-        await findRecipes().then(results => this.setState({
-            recipes: results
-        }))
+        await findVideoById(this.props.match.params.vid).then(results => this.setState({
+            video: results
+        }));
     };
+
 
 
     render() {
@@ -39,14 +51,11 @@ class Recipes extends Component{
                                 <li className="nav-item active">
                                     <a className="nav-link" href="https://pvhealthtrust.org/">Home <span className="sr-only">(current)</span></a>
                                 </li>
-
-
                                 <li className="nav-item active">
                                     <a className="nav-link"
-                                       onClick={this.props.scrollRecipesHandler}
+                                       href={"/recipes"}
                                     >Recipes</a>
                                 </li>
-
 
                                 <li className="nav-item active">
                                     <a className="nav-link"
@@ -59,7 +68,6 @@ class Recipes extends Component{
                                        href={"/calendar"}
                                        onClick={this.props.scrollEventsHandler}>Events</a>
                                 </li>
-
                             </ul>
                             <a href={"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y5UW6XWBNPASL&source=url"}>
                                 <button
@@ -69,45 +77,34 @@ class Recipes extends Component{
 
                     </nav>
 
+
+
                 </div>
                 <div className={"banners"}>
                     <h1 className={"banner-font"}>
-                        {"All Recipes"}
+                        {this.state.video.title}
                     </h1>
                 </div>
-                <br/>
                 <div className={"container"}>
-                    <div className={"row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3"}>
-                        {
-                            this.state.recipes && this.state.recipes.map(recipe =>
-                                <div key={recipe.id} className="col mb-4">
-                                    <div className="card h-100">
-                                        <Link className="card-title" to={`/recipes/${recipe.id}/details`}>
-                                            {!recipe.url && <img className={"card-img-top new-movie-post"} src={!recipe.url && `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg`}/>}
-                                            {recipe.url && <img className={"card-img-top new-movie-post"} src={recipe.url && `${recipe.url}`}/>}
-                                        </Link>
-                                        <div className="card-body">
-                                            <Link className="card-title" to={`/recipes/${recipe.id}/details`}>
-                                                <h6>{recipe.title || recipe.name}</h6>
-                                            </Link>
-                                            <div className="card-body-release-time">
+                    <br/>
 
-                                                <small className="text-muted"><img className={"info-small"} src={alarmClock} alt="cookingPot" />{recipe.preTime}</small>
-                                                <small className="text-muted"><img className={"info-small"} src={cookingPot} alt="cookingPot" />{recipe.cookTime}</small>
-                                                <small className="text-muted"><img className={"info-small"} src={utensil} alt="cookingPot" />{recipe.servings}</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                        }
+                    <div>
+                        <br/>
                     </div>
 
-
+                    {this.state.video.url &&  <iframe src={`${this.state.video.url}`} width="1100" height="620" frameBorder="0" allowFullScreen/>}
+                    <div>
+                        <h1 className={"bold-font-title"}>{this.state.video.title}</h1>
+                    </div>
+                    <div>
+                        {this.state.video.description}
+                    </div>
+                    <br/>
                 </div>
+
             </div>
         )
     }
 }
 
-export default Recipes
+export default VideoDetails

@@ -5,7 +5,7 @@ class RecipeScreen extends Component{
         return(
             <div className={"container-recipe"} ref={this.props.scrollRecipes}>
                 <img className={"recipe-img"} src="https://i.ibb.co/3y1jsc1/We-Chat-Image-20200429210510.jpg"/>
-                <a className="bottom-left" href={"/recipes"}>Check Our Healthy Recipes</a>
+                <a className="recipe-note" href={"/recipes"}>Check Our Healthy Recipes</a>
                 {/*<div className="bottom-left">Check Our Healthy Recipes</div>*/}
             </div>
         )

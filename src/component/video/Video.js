@@ -1,20 +1,20 @@
 import React, {Component} from 'react'
-import {findRecipes} from "../services/RecipeService";
+import {findVideos} from "../services/VideoService";
 import {Link} from "react-router-dom";
 import cookingPot from '../common/cooking_pot.svg';
 import alarmClock from '../common/alarm_clock.svg';
 import utensil from '../common/dinner_knive&fork.svg';
 
-class Recipes extends Component{
+class Video extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            recipes: [],
+            videos: [],
         }
     }
     componentDidMount = async () => {
-        await findRecipes().then(results => this.setState({
-            recipes: results
+        await findVideos().then(results => this.setState({
+            videos: results
         }))
     };
 
@@ -43,14 +43,14 @@ class Recipes extends Component{
 
                                 <li className="nav-item active">
                                     <a className="nav-link"
-                                       onClick={this.props.scrollRecipesHandler}
+                                       href={"/recipes"}
                                     >Recipes</a>
                                 </li>
 
 
                                 <li className="nav-item active">
                                     <a className="nav-link"
-                                       href={"/videos"}>
+                                       onClick={this.props.scrollSmoothHandler}>
                                         Videos
                                     </a>
                                 </li>
@@ -72,29 +72,34 @@ class Recipes extends Component{
                 </div>
                 <div className={"banners"}>
                     <h1 className={"banner-font"}>
-                        {"All Recipes"}
+                        {"All Videos"}
                     </h1>
                 </div>
                 <br/>
-                <div className={"container"}>
-                    <div className={"row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3"}>
-                        {
-                            this.state.recipes && this.state.recipes.map(recipe =>
-                                <div key={recipe.id} className="col mb-4">
-                                    <div className="card h-100">
-                                        <Link className="card-title" to={`/recipes/${recipe.id}/details`}>
-                                            {!recipe.url && <img className={"card-img-top new-movie-post"} src={!recipe.url && `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg`}/>}
-                                            {recipe.url && <img className={"card-img-top new-movie-post"} src={recipe.url && `${recipe.url}`}/>}
-                                        </Link>
-                                        <div className="card-body">
-                                            <Link className="card-title" to={`/recipes/${recipe.id}/details`}>
-                                                <h6>{recipe.title || recipe.name}</h6>
-                                            </Link>
-                                            <div className="card-body-release-time">
 
-                                                <small className="text-muted"><img className={"info-small"} src={alarmClock} alt="cookingPot" />{recipe.preTime}</small>
-                                                <small className="text-muted"><img className={"info-small"} src={cookingPot} alt="cookingPot" />{recipe.cookTime}</small>
-                                                <small className="text-muted"><img className={"info-small"} src={utensil} alt="cookingPot" />{recipe.servings}</small>
+                <div className={"container"}>
+                    <div >
+                        {
+                            this.state.videos && this.state.videos.map(video =>
+                                <div key={video.id}>
+                                    <div className="card mb-3" style={{maxWidth: "1230px"}}>
+                                        <div className="row no-gutters">
+                                            <div className="col-md-5" >
+                                                {!video.url && <img className={"card-img-top new-movie-post"} src={!video.url && `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg`}/>}
+                                                {video.url &&  <iframe src={`${video.url}`} width="420" height="320" frameBorder="0" allowFullScreen/>}
+                                            </div>
+                                            <div className={"col-md-7"}>
+                                                <div className="card-body ">
+                                                    <div>
+                                                        <Link className="card-title bold-font-title card-text-description" to={`/videos/${video.id}/details`}>
+                                                            <h2>{video.title || video.name}</h2>
+                                                        </Link>
+                                                    </div>
+                                                    <br/>
+                                                    <p className={"card-text card-text-description"}>
+                                                        {video.description}
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -110,4 +115,4 @@ class Recipes extends Component{
     }
 }
 
-export default Recipes
+export default Video
