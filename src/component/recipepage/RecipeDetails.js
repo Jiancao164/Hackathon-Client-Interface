@@ -49,7 +49,11 @@ class RecipeDetails extends Component{
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="https://pvhealthtrust.org/">Home <span className="sr-only">(current)</span></a>
+                                    <a className="nav-link" href="https://pvhealthtrust.org/">PVCHT <span className="sr-only">(current)</span></a>
+                                </li>
+
+                                <li className="nav-item active">
+                                    <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                                 </li>
                                 <li className="nav-item active">
                                     <a className="nav-link"
@@ -123,6 +127,8 @@ class RecipeDetails extends Component{
 
                         </div>
                     </div>
+                    <br/>
+
 
                     <div className={"row icon-email"}>
                         <div className={"row col-6"}>
@@ -156,14 +162,14 @@ class RecipeDetails extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div className={"row"}>
-                            <div className={"col-7 form-control-email"}>
+                        <div className={"row col-6"}>
+                            <div className={"form-control-email"}>
                                 <input
                                     type={"email"}
                                     onChange={(e) => this.setState({
                                         email: e.target.value
                                     })}
-                                    style={{height: "52px", width: "300px"}}
+                                    style={{height: "52px", width: "320px"}}
                                     className="form-control" placeholder="Email" aria-label="Username"
                                     value={this.state.email} aria-describedby="basic-addon1"/>
                             </div>
