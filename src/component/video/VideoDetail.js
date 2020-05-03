@@ -100,7 +100,7 @@ class VideoDetails extends Component{
                     <div>
                         <h1 className={"bold-font-title"}>{this.state.video.title}</h1>
                     </div>
-                    <div>
+                    <div className={"normal-font"}>
                         {this.state.video.description}
                     </div>
                     <br/>

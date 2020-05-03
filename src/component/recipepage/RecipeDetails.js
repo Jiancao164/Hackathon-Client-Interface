@@ -93,11 +93,12 @@ class RecipeDetails extends Component{
                 <div className={"container"}>
                     <br/>
 
+
                     <div>
                         <br/>
                     </div>
 
-                    <div className={"row"}>
+                    <div className={"row section"}>
                         <div className={"recipe-image col-6"}>
                             {!this.state.recipe.url && <img className={"card-img-top new-movie-post"} src={!this.state.recipe.url && `https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg`}/>}
                             {this.state.recipe.url && <img className={"card-img-top new-movie-post"} src={this.state.recipe.url && `${this.state.recipe.url}`}/>}
@@ -127,7 +128,7 @@ class RecipeDetails extends Component{
 
                         </div>
                     </div>
-                    <br/>
+
 
 
                     <div className={"row icon-email"}>

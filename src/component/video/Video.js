@@ -100,7 +100,7 @@ class Video extends Component{
                                                         </Link>
                                                     </div>
                                                     <br/>
-                                                    <p className={"card-text card-text-description"}>
+                                                    <p className={"card-text card-text-description normal-font"}>
                                                         {video.description}
                                                     </p>
                                                 </div>

@@ -8,7 +8,7 @@ class VideoScreen extends Component{
                 <img className={"cal-img"} src="https://i.ibb.co/hmGt1WT/cooking.jpg"/>
 
                     <div>
-                        <a style={{ color: '#FFF' }} className=" homepage-video-note" href={"/videos"}>Watch Cooking Demo Become a Chef</a>
+                        <a style={{ color: '#FFF' }} className=" container-frosted homepage-video-note" href={"/videos"}>Watch Cooking Demos Become a Chef</a>
                     </div>
 
 
