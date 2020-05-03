@@ -1,9 +1,21 @@
 import React, {Component} from 'react'
+import {findCalendars} from "../services/CalendarService";
 
 
 export default class Calendar extends Component{
 
 
+
+    componentDidMount = () => {
+
+        findCalendars().then(result => this.setState({
+            url: result[0].url.toString()
+        }))
+    };
+
+    state = {
+        url: ""
+    };
 
     render() {
         return (
@@ -65,10 +77,10 @@ export default class Calendar extends Component{
                 <div className={"container-fluid"}>
                     <div className={"row"}>
                         <div className={"col-8"}>
-                            <iframe
+                            {<iframe
                                 className={"calendar"}
-                                src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=MnFmanFhY2FkMDhjNG05bnYyZWRjNzdmaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;showTz=0&amp;showCalendars=0"
-                            />
+                                src={this.state.url}
+                            />}
                         </div>
 
                         <div className={"col-3 cal-note"}>

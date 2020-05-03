@@ -90,14 +90,13 @@ class Recipes extends Component{
                                             {recipe.url && <img className={"card-img-top new-movie-post"} src={recipe.url && `${recipe.url}`}/>}
                                         </Link>
                                         <div className="card-body">
-                                            <Link className="card-title" to={`/recipes/${recipe.id}/details`}>
-                                                <h6>{recipe.title || recipe.name}</h6>
+                                            <Link className="card-title card-recipe-title" to={`/recipes/${recipe.id}/details`}>
+                                                <h5>{recipe.title || recipe.name}</h5>
                                             </Link>
-                                            <div className="card-body-release-time">
-
-                                                <small className="text-muted"><img className={"info-small"} src={alarmClock} alt="cookingPot" />{recipe.preTime}</small>
-                                                <small className="text-muted"><img className={"info-small"} src={cookingPot} alt="cookingPot" />{recipe.cookTime}</small>
-                                                <small className="text-muted"><img className={"info-small"} src={utensil} alt="cookingPot" />{recipe.servings}</small>
+                                            <div className="card-body-release-time row">
+                                                <div className="text-muted"><img className={"info-small info-small-icon"} src={alarmClock} alt="cookingPot" />{recipe.preTime}</div>
+                                                <div className="text-muted"><img className={"info-small info-small-icon"} src={cookingPot} alt="cookingPot" />{recipe.cookTime}</div>
+                                                <div className="text-muted"><img className={"info-small info-small-icon"} src={utensil} alt="cookingPot" />{recipe.servings}</div>
                                             </div>
                                         </div>
                                     </div>
