@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from "react-router-dom";
-import {findRecipeById, findRecipes, updateRecipe} from "../services/RecipeService";
+import {createSubscribe, findRecipeById, findRecipes, updateRecipe} from "../services/RecipeService";
 import {findNutrition} from "../services/NutritionService";
 import cookingPot from '../common/cooking_pot.svg';
 import alarmClock from '../common/alarm_clock.svg';
@@ -28,6 +28,11 @@ class RecipeDetails extends Component{
             recipe: results
         }));
     };
+
+    createSubscribe = async () => {
+        await createSubscribe({subscribe: this.state.email, timestamp: (new Date()).toLocaleDateString() + " " + (new Date().toLocaleTimeString())})
+
+}
 
 
 
@@ -170,13 +175,14 @@ class RecipeDetails extends Component{
                                     onChange={(e) => this.setState({
                                         email: e.target.value
                                     })}
-                                    style={{height: "52px", width: "320px"}}
+                                    style={{height: "52px", width: "250px"}}
                                     className="form-control" placeholder="Email" aria-label="Username"
                                     value={this.state.email} aria-describedby="basic-addon1"/>
                             </div>
                             <div className={"float-right"}>
                                 <button
-                                    className={"btn btn-email "}>Sign me in</button>
+                                    onClick={this.createSubscribe}
+                                    className={"btn btn-email "}>Subscribe Newsletter</button>
                             </div>
 
                         </div>

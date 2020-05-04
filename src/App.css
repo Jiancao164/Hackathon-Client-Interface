@@ -266,11 +266,11 @@ border:solid 1px #777;
 }
 .homepage-event-note {
   position: absolute;
-  bottom: 510px;
-  left: 200px;
-  right: 600px;
-  margin-top: 600px;
-  margin-left: 150px;
+  bottom: 280px;
+  left: 670px;
+  right: 430px;
+
+
   color: white;
   font-size: 60px;
   font-weight: bolder;
@@ -312,13 +312,22 @@ border:solid 1px #777;
   transform: scale(1.2);
 }
 .home-note {
+   text-align: left;
+   position: absolute;
+   bottom: 500px;
+   left: 100px;
+   right:650px;
+   color: white;
+   font-size: 45px;
+   font-weight: bold;
+ }
+.home-note2 {
   text-align: left;
   position: absolute;
-  bottom: 480px;
-  left: 100px;
-  right:650px;
+  bottom: 320px;
+  left: 150px;
   color: white;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
 }
 .section {

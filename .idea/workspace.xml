@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="197d8380-f0a3-4c40-90c7-3e3f5baee6b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/common/Up_Right_Arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/common/circle_arrow_Grey.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/common/circle_arrow_White.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/common/circle_arrow_bottom.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/common/circle_player_Grey.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/common/circle_player_White.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/homepage/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/homepage/CalendarScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/homepage/CalendarScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/homepage/Heading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/homepage/Heading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/homepage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/homepage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/homepage/RecipeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/homepage/RecipeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/homepage/VideoScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/homepage/VideoScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/homepage/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/homepage/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/recipepage/RecipeDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/recipepage/RecipeDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/services/RecipeService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/services/RecipeService.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +26,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="12" />
+          <entry key="css" value="14" />
           <entry key="html" value="4" />
           <entry key="java" value="1" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="112" />
+          <entry key="js" value="121" />
           <entry key="json" value="4" />
           <entry key="svg" value="18" />
           <entry key="ts" value="5" />
@@ -47,12 +38,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="12" />
+          <entry key="CSS" value="14" />
           <entry key="HTML" value="4" />
           <entry key="Image" value="1" />
           <entry key="JAVA" value="1" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="112" />
+          <entry key="JavaScript" value="121" />
           <entry key="SVG" value="18" />
           <entry key="TypeScript" value="5" />
         </counts>
@@ -65,60 +56,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2166" />
+          <entry key="css" value="2273" />
           <entry key="html" value="41" />
-          <entry key="js" value="6616" />
+          <entry key="js" value="6922" />
           <entry key="json" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2166" />
+          <entry key="CSS" value="2273" />
           <entry key="HTML" value="41" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="6616" />
+          <entry key="JavaScript" value="6922" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/common/Up_Right_Arrow.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/common/circle_player_White.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/homepage/HomePage.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/component/recipepage/RecipeDetails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247">
-              <caret line="286" column="14" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/homepage/HomeScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="304">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -127,10 +87,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/homepage/Heading.js">
+        <entry file="file://$PROJECT_DIR$/src/component/services/RecipeService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="32" column="79" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="79" />
+            <state relative-caret-position="73">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/video/VideoDetail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/services/CalendarService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/services/VideoService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="326" column="12" selection-start-line="326" selection-start-column="12" selection-end-line="326" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -148,10 +147,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/homepage/VideoScreen.js">
+        <entry file="file://$PROJECT_DIR$/src/component/homepage/HomePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="184">
+              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/homepage/HomeScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -159,18 +170,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/homepage/CalendarScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+            <state relative-caret-position="300">
+              <caret line="12" column="97" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/common/cooking_pot.svg">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -198,6 +204,7 @@
       <find>recipe-description</find>
       <find>recipe-no</find>
       <find>event</find>
+      <find>home-note</find>
     </findStrings>
     <replaceStrings>
       <replace>video</replace>
@@ -223,7 +230,6 @@
         <option value="$PROJECT_DIR$/src/manager/Manager.js" />
         <option value="$PROJECT_DIR$/src/component/common/thumbs_down_1223114_easyicon.net.svg" />
         <option value="$PROJECT_DIR$/src/component/common/thumbs_up_1223115_easyicon.net.svg" />
-        <option value="$PROJECT_DIR$/src/component/recipepage/RecipeDetails.js" />
         <option value="$PROJECT_DIR$/src/component/video/VideoDetail.js" />
         <option value="$PROJECT_DIR$/src/component/video/Video.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
@@ -234,10 +240,12 @@
         <option value="$PROJECT_DIR$/src/component/homepage/Heading.js" />
         <option value="$PROJECT_DIR$/src/component/homepage/RecipeScreen.js" />
         <option value="$PROJECT_DIR$/src/component/homepage/VideoScreen.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/component/homepage/HomeScreen.js" />
         <option value="$PROJECT_DIR$/src/component/homepage/HomePage.js" />
         <option value="$PROJECT_DIR$/src/component/homepage/CalendarScreen.js" />
+        <option value="$PROJECT_DIR$/src/component/homepage/HomeScreen.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/component/services/RecipeService.js" />
+        <option value="$PROJECT_DIR$/src/component/recipepage/RecipeDetails.js" />
       </list>
     </option>
   </component>
@@ -396,12 +404,12 @@
       <option name="presentableId" value="Default" />
       <updated>1588116678627</updated>
       <workItem from="1588116682488" duration="92639000" />
-      <workItem from="1588481220797" duration="21959000" />
+      <workItem from="1588481220797" duration="26966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114598000" />
+    <option name="totallyTimeSpent" value="119605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,7 +424,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1704698" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1704698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -433,7 +441,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.364539" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.364539" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -567,13 +575,6 @@
     <entry file="file://$PROJECT_DIR$/src/component/common/thumbs_up_1223115_easyicon.net.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/services/RecipeService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -604,24 +605,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/services/VideoService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -632,34 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/services/CalendarService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/calendar/Calendar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2610">
           <caret line="87" column="51" lean-forward="true" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/common/constant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/video/VideoDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2156">
-          <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="50" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -686,27 +649,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/recipepage/Recipes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/recipepage/RecipeDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="112" selection-start-line="112" selection-end-line="116" selection-end-column="73" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -746,17 +692,82 @@
     <entry file="file://$PROJECT_DIR$/src/component/common/Up_Right_Arrow.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="286" column="14" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/homepage/Heading.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="32" column="79" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/common/constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/homepage/VideoScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/services/VideoService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/video/VideoDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/services/CalendarService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/homepage/CalendarScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="97" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/homepage/RecipeScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -772,38 +783,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/homepage/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="210">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/homepage/RecipeScreen.js">
+    <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="326" column="12" selection-start-line="326" selection-start-column="12" selection-end-line="326" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/homepage/VideoScreen.js">
+    <entry file="file://$PROJECT_DIR$/src/component/services/RecipeService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="73">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/homepage/CalendarScreen.js">
+    <entry file="file://$PROJECT_DIR$/src/component/recipepage/RecipeDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+        <state relative-caret-position="304">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

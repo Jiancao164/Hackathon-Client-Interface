@@ -24,6 +24,15 @@ export const createRecipe = () =>
         }
     }).then(response => response.json());
 
+export const createSubscribe = (subscribe) =>
+    fetch(`${HEROKU_SERVER_URL}/subscribes`, {
+        method: 'POST',
+        body: JSON.stringify(subscribe),
+        headers: {
+            'content-type': 'application/json'
+        }
+    }).then(response => response.json());
+
 export const deleteRecipe = (rid) =>
     fetch(`${HEROKU_SERVER_URL}/recipes/${rid}`, {
         method: 'DELETE',

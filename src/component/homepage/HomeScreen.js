@@ -10,7 +10,13 @@ class HomeScreen extends Component{
                     onClick={this.props.scrollRecipesHandler}
                     className={"arrowWhite"} src={arrowWhite}/></a>
                 <Link to={"/recipes"}><img className={"recipe-img"} src="https://i.ibb.co/3y1jsc1/We-Chat-Image-20200429210510.jpg"/></Link>
-                <a style={{ color: '#FFF' }} className="container-frosted-recipe  home-note" >Appropriate Nutrition Can Highly Improve Your Quality of Life</a>
+                <div>
+                    <a style={{ color: '#FFF' }} className="container-frosted-recipe  home-note" >Appropriate Nutrition Can Highly Improve Your Quality of Life. Join Us, Enjoy Your Health.</a>
+                </div>
+                <div className={"home-note2"}>
+                    Eating for Everyday Wellness
+                </div>
+
                 {/*<div className="bottom-left">Check Our Healthy Recipes</div>*/}
             </div>
         )
