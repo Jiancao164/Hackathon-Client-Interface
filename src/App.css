@@ -277,8 +277,9 @@ border:solid 1px #777;
 }
 .recipe-note {
   position: absolute;
-  bottom: 400px;
-  left: 320px;
+  bottom: 370px;
+  left: 500px;
+  right:500px;
   color: white;
   font-size: 70px;
   font-weight: bolder;

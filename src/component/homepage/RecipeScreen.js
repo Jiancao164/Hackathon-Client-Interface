@@ -8,7 +8,7 @@ class RecipeScreen extends Component{
             <div className={"container-recipe"} ref={this.props.scrollRecipes}>
                 <a href={"/recipes"}><img
                     className={"arrowWhite"} src={arrowWhite}/></a>
-                <img className={"recipe-img"} src="https://i.ibb.co/3y1jsc1/We-Chat-Image-20200429210510.jpg"/>
+                <img className={"recipe-img"} src="https://i.ibb.co/254xscd/We-Chat-Image-20200503182111.jpg"/>
                 <a style={{ color: '#FFF' }} className="container-frosted-recipe  recipe-note" >Check Our Healthy Recipes</a>
                 {/*<div className="bottom-left">Check Our Healthy Recipes</div>*/}
             </div>
