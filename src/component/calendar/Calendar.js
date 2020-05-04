@@ -58,10 +58,7 @@ export default class Calendar extends Component{
                                        onClick={this.props.scrollEventsHandler}>Events</a>
                                 </li>
                             </ul>
-                            <a href={"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y5UW6XWBNPASL&source=url"}>
-                                <button
-                                    className="btn btn-donate my-2 my-sm-0" type="submit">DONATE</button>
-                            </a>
+
                         </div>
 
                     </nav>
@@ -71,7 +68,7 @@ export default class Calendar extends Component{
                 </div>
                 <div className={"banners"}>
                     <h1 className={"banner-font"}>
-                        Register our events / Make an appointment with us
+                        Register for events/ make an appointment
                     </h1>
                 </div>
                 <div className={"container-fluid"}>
@@ -83,7 +80,7 @@ export default class Calendar extends Component{
                             />}
                         </div>
 
-                        <div className={"col-3 cal-note"}>
+                        <div className={"col-4 cal-note"}>
                             <h1 className={"bold-font-title"}>
                                 Check our calendar,
                                 pick a cooking class you are interested or make an appointment with our specialists.

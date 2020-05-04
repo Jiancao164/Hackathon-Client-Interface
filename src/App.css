@@ -225,8 +225,8 @@
 
 border:solid 1px #777;
   margin-left: 50px;
-  width:900px;
-  height:650px;
+  width:90%;
+  height:200%;
   frameborder:0;
   scrolling:no
 }
@@ -246,10 +246,9 @@ border:solid 1px #777;
 }
 .homepage-video-note {
   position: absolute;
-  bottom: 500px;
-  left: 80px;
-  margin-top: 600px;
-  margin-right: 600px;
+  bottom: 50%;
+  left: 10%;
+  right: 50%;
   color: white;
   font-size: 60px;
   font-weight: bolder;
@@ -266,9 +265,9 @@ border:solid 1px #777;
 }
 .homepage-event-note {
   position: absolute;
-  bottom: 280px;
-  left: 670px;
-  right: 430px;
+  bottom: 40%;
+  left: 63%;
+  right: 2%;
 
 
   color: white;
@@ -278,9 +277,9 @@ border:solid 1px #777;
 }
 .recipe-note {
   position: absolute;
-  bottom: 370px;
-  left: 200px;
-  right:200px;
+  bottom: 55%;
+  left: 22%;
+  right:22%;
   color: white;
   font-size: 70px;
   font-weight: bolder;
@@ -312,7 +311,7 @@ border:solid 1px #777;
   left: 700px;
   color: white;
   font-size: 70px;
-  font-weight: bolder;
+
 }
 .arrowWhite:hover
 {
@@ -323,18 +322,20 @@ border:solid 1px #777;
 .home-note {
    text-align: left;
    position: absolute;
-   bottom: 450px;
-   left: 100px;
-   right:650px;
+   bottom: 60%;
+   left: 7%;
+   right: 45%;
    color: white;
    font-size: 45px;
    font-weight: bold;
    text-shadow: 2px 2px 8px gray;
+  padding-top: 30px;
+  padding-bottom: 30px;
  }
 .home-note2 {
   text-align: left;
   position: absolute;
-  bottom: 320px;
+  bottom: 45%;
   left: 150px;
   color: white;
   font-size: 80px;
@@ -388,4 +389,21 @@ border:solid 1px #777;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.arrowWhite-homepage {
+  width: 110px;
+  height: 110px;
+  align-content: center;
+  cursor: pointer;
+  position: absolute;
+
+  color: white;
+  font-size: 70px;
+  font-weight: bolder;
+  top: 65%;
+  left: 50%;
+  margin-top: -55px;
+  margin-left: -55px;
+
+
 }

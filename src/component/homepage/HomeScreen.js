@@ -8,10 +8,10 @@ class HomeScreen extends Component{
             <div className={"container-recipe"} ref={this.props.scrollHome}>
                 <a><img
                     onClick={this.props.scrollRecipesHandler}
-                    className={"arrowWhite"} src={arrowWhite}/></a>
+                    className={"arrowWhite-homepage arrowWhite"} src={arrowWhite}/></a>
                 <img className={"recipe-img"} src="https://i.ibb.co/3y1jsc1/We-Chat-Image-20200429210510.jpg"/>
                 <div>
-                    <a style={{ color: '#FFF' }} className="container-frosted-recipe  home-note" >Appropriate Nutrition Can Highly Improve Your Quality of Life.<br/> Join Us, Enjoy Your Health.</a>
+                    <a style={{ color: '#FFF' }} className="container-frosted-recipe  home-note" >Improving your nutrition will improve your health!</a>
                 </div>
                 <div className={"home-note2"}>
                     Eating for Everyday Wellness

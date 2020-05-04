@@ -10,7 +10,7 @@ class RecipeScreen extends Component{
                     className={"arrowWhite"} src={arrowWhite}/></a>
                 <img className={"recipe-img"} src="https://i.ibb.co/kXXGTfH/We-Chat-Image-20200504103541.jpg"/>
                 <div className={"arrow-position"}>
-                    <a style={{ color: '#FFF' }} className="container-frosted-recipe  recipe-note" >Check Our Healthy Recipes</a>
+                    <a style={{ color: '#FFF' }} className="container-frosted-recipe  recipe-note" >Healthy Recipes</a>
                 </div>
                 {/*<div className="bottom-left">Check Our Healthy Recipes</div>*/}
             </div>

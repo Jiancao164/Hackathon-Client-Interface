@@ -10,7 +10,7 @@ class VideoScreen extends Component{
                     className={"arrowWhite"} src={playWhite}/></a>
                 <img className={"cal-img"} src="https://i.ibb.co/hmGt1WT/cooking.jpg"/>
                     <div>
-                        <a style={{ color: '#FFF' }} className=" container-frosted homepage-video-note" >Watch Cooking Demos Become a Chef</a>
+                        <a style={{ color: '#FFF' }} className=" container-frosted homepage-video-note" >Learn How to Cook with Us </a>
                     </div>
 
 

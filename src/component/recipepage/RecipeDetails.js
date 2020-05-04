@@ -79,10 +79,7 @@ class RecipeDetails extends Component{
                                        onClick={this.props.scrollEventsHandler}>Events</a>
                                 </li>
                             </ul>
-                            <a href={"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y5UW6XWBNPASL&source=url"}>
-                                <button
-                                    className="btn btn-donate my-2 my-sm-0" type="submit">DONATE</button>
-                            </a>
+
                         </div>
 
                     </nav>

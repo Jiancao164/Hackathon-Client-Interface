@@ -9,8 +9,8 @@ class CalendarScreen extends Component{
             <div className={"container-recipe"} ref={this.props.scrollEvents} id={"cal"}>
                 <a href={"/calendar"}><img
                     className={"arrowWhite"} src={arrowWhite}/></a>
-                <img className={"cal-img"} src="https://i.ibb.co/LSxzqcw/We-Chat-Image-20200503154656.jpg"/>
-                <a  style={{ color: '#FFF' }} className=" homepage-event-note container-frosted" >Learn How to Cook With Us</a>
+                <img className={"cal-img"} src="https://i.niupic.com/images/2020/05/05/7BpK.jpg"/>
+                <a  style={{ color: '#FFF' }} className=" homepage-event-note container-frosted" >Register for Events/ Make an Appointment</a>
 
             </div>
         )
