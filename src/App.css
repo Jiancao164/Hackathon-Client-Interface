@@ -285,9 +285,7 @@ border:solid 1px #777;
   font-size: 70px;
   font-weight: bolder;
   text-shadow: 2px 2px 8px gray;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 .arrowWhite {
   width: 110px;
@@ -295,11 +293,16 @@ border:solid 1px #777;
   align-content: center;
   cursor: pointer;
   position: absolute;
-  bottom: 140px;
-  left: 700px;
+
   color: white;
   font-size: 70px;
   font-weight: bolder;
+
+
+  top: 75%;
+  left: 50%;
+  margin-top: -55px;
+  margin-left: -55px;
 }
 .playWhite {
   align-content: center;
